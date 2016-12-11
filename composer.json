@@ -1,0 +1,27 @@
+{
+  "name": "bigz/halapi-bundle",
+  "description": "Integration of Halapi into Symfony.",
+  "keywords": [ "rest", "hateoas", "hal", "api" ],
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Romain Richard",
+      "email": "rrichard@outlook.fr"
+    }
+  ],
+  "require": {
+    "php": ">5.6",
+    "symfony/framework-bundle": "~2.7 || ~3.0",
+    "willdurand/hateoas": "^2.10.0"
+  },
+  "require-dev": {
+    "symfony/expression-language": "~2.4 || ~3.0",
+    "twig/twig": "~1.12",
+    "phpunit/phpunit": "~5.7"
+  },
+  "autoload": {
+    "psr-0": { "Bigz\\Bundle\\HalapiBundle": "" }
+  },
+  "target-dir": "Bigz/Bundle/HalapiBundle"
+}
