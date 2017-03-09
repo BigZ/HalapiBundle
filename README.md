@@ -1,10 +1,10 @@
-Symfony bundle for bigz/halapi
+Symfony bundle for Bigz/halapi
 
 ```
-composer require bigz/halapibundle
+composer require Bigz/halapibundle
 ```
 
 Register it in your AppKernel
 ```
-new bigz\HALAPIBundle\bigzHALAPIBundle(),
+new Bigz\HalapiBundle\BigzHalapiBundle(),
 ```

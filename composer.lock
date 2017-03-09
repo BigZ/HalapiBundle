@@ -8,16 +8,16 @@
     "content-hash": "f0e9aa3c683e4db012a09edcbf233517",
     "packages": [
         {
-            "name": "bigz/halapi",
+            "name": "Bigz/halapi",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/BigZ/Halapi.git",
+                "url": "https://github.com/Bigz/Halapi.git",
                 "reference": "0c01fea96697f32b18b171fbc11ef4142bcb1ac1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BigZ/Halapi/zipball/0c01fea96697f32b18b171fbc11ef4142bcb1ac1",
+                "url": "https://api.github.com/repos/Bigz/Halapi/zipball/0c01fea96697f32b18b171fbc11ef4142bcb1ac1",
                 "reference": "0c01fea96697f32b18b171fbc11ef4142bcb1ac1",
                 "shasum": ""
             },
@@ -3873,7 +3873,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "bigz/halapi": 20
+        "Bigz/halapi": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

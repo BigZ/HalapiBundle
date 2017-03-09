@@ -1,28 +1,28 @@
 services:
-    bigz_halapi.url_generator:
+    Bigz_halapi.url_generator:
         class: Halapi\UrlGenerator\SymfonyUrlGenerator
         arguments: ["@router"]
-    bigz_halapi.object_manager:
-        class: bigz\halapi\ObjectManager\DoctrineOrmObjectManager
+    Bigz_halapi.object_manager:
+        class: Bigz\halapi\ObjectManager\DoctrineOrmObjectManager
         arguments: ["@doctrine.orm.entity_manager"]
 
-    bigz_halapi.links_relation:
-        class: bigz\halapi\Relation\LinksRelation
-        arguments: ["@annotation_reader", "&bigz_halapi@url_generator", "@bigz_halapi.object_manager"]
-    bigz_halapi.embedded_relation:
-        class: bigz\halapi\Relation\EmbeddedRelation
+    Bigz_halapi.links_relation:
+        class: Bigz\halapi\Relation\LinksRelation
+        arguments: ["@annotation_reader", "&Bigz_halapi@url_generator", "@Bigz_halapi.object_manager"]
+    Bigz_halapi.embedded_relation:
+        class: Bigz\halapi\Relation\EmbeddedRelation
         arguments: ["@annotation_reader", "@request_stack"]
 
-    bigz_halapi.relation_factory:
-        class: bigz\halapi\Factory\RelationFactory
-        arguments: [["@bigz_halapi.embedded_relation", "@bigz_halapi.links_relation"]]
+    Bigz_halapi.relation_factory:
+        class: Bigz\halapi\Factory\RelationFactory
+        arguments: [["@Bigz_halapi.embedded_relation", "@Bigz_halapi.links_relation"]]
 
-    bigz_halapi.pagination_factory:
-        class: bigz\halapi\Factory\PaginationFactory
-        arguments: ["@router", "@bigz_halapi.object_manager", "@request_stack"]
+    Bigz_halapi.pagination_factory:
+        class: Bigz\halapi\Factory\PaginationFactory
+        arguments: ["@router", "@Bigz_halapi.object_manager", "@request_stack"]
 
-    bigz_halapi.json_event_subscriber:
-        class: bigz\halapi\Subscriber\JsonEventSubscriber
-        arguments: ["@bigz_halapi.relation_factory"]
+    Bigz_halapi.json_event_subscriber:
+        class: Bigz\halapi\Subscriber\JsonEventSubscriber
+        arguments: ["@Bigz_halapi.relation_factory"]
         tags:
             - { name: jms_serializer.event_subscriber }

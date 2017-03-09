@@ -1,9 +1,9 @@
 <?php
 
-namespace bigz\HALAPIBundle;
+namespace Bigz\HalapiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class bigzHALAPIBundle extends Bundle
+class BigzHalapiBundle extends Bundle
 {
 }

@@ -1,5 +1,5 @@
 {
-  "name": "bigz/halapi-bundle",
+  "name": "Bigz/halapi-bundle",
   "description": "Integration of Halapi into Symfony.",
   "keywords": [ "rest", "hateoas", "hal", "api" ],
   "type": "symfony-bundle",
@@ -13,7 +13,7 @@
   "require": {
     "php": ">5.5",
     "symfony/framework-bundle": "~2.7 || ~3.0",
-    "bigz/halapi": "dev-master"
+    "Bigz/halapi": "dev-master"
   },
   "require-dev": {
     "symfony/expression-language": "~2.4 || ~3.0",
