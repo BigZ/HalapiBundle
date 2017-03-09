@@ -2,7 +2,9 @@
 
 namespace Bigz\HalapiBundle;
 
-class BigzHalapiBundle
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class BigzHalapiBundle extends Bundle
 {
 
 }
