@@ -21,7 +21,7 @@
     "phpunit/phpunit": "~5.7"
   },
   "autoload": {
-    "psr-0": { "Bigz\\Bundle\\HalapiBundle": "" }
+    "psr-0": { "Bigz\\HalapiBundle": "" }
   },
-  "target-dir": "Bigz/Bundle/HalapiBundle"
+  "target-dir": "Bigz/HalapiBundle"
 }
