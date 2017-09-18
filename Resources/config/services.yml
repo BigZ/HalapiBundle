@@ -3,26 +3,26 @@ services:
         class: Halapi\UrlGenerator\SymfonyUrlGenerator
         arguments: ["@router"]
     Bigz_halapi.object_manager:
-        class: Bigz\halapi\ObjectManager\DoctrineOrmObjectManager
+        class: Halapi\ObjectManager\DoctrineOrmObjectManager
         arguments: ["@doctrine.orm.entity_manager"]
 
     Bigz_halapi.links_relation:
-        class: Bigz\halapi\Relation\LinksRelation
+        class: Halapi\Relation\LinksRelation
         arguments: ["@annotation_reader", "&Bigz_halapi@url_generator", "@Bigz_halapi.object_manager"]
     Bigz_halapi.embedded_relation:
-        class: Bigz\halapi\Relation\EmbeddedRelation
+        class: Halapi\Relation\EmbeddedRelation
         arguments: ["@annotation_reader", "@request_stack"]
 
     Bigz_halapi.relation_factory:
-        class: Bigz\halapi\Factory\RelationFactory
+        class: Halapi\Factory\RelationFactory
         arguments: [["@Bigz_halapi.embedded_relation", "@Bigz_halapi.links_relation"]]
 
     Bigz_halapi.pagination_factory:
-        class: Bigz\halapi\Factory\PaginationFactory
+        class: Halapi\Factory\PaginationFactory
         arguments: ["@router", "@Bigz_halapi.object_manager", "@request_stack"]
 
     Bigz_halapi.json_event_subscriber:
-        class: Bigz\halapi\Subscriber\JsonEventSubscriber
+        class: Halapi\Subscriber\JsonEventSubscriber
         arguments: ["@Bigz_halapi.relation_factory"]
         tags:
             - { name: jms_serializer.event_subscriber }
