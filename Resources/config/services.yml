@@ -19,7 +19,7 @@ services:
 
     Bigz_halapi.pagination_factory:
         class: Halapi\Factory\PaginationFactory
-        arguments: ["@router", "@Bigz_halapi.object_manager", "@request_stack"]
+        arguments: ["@Bigz_halapi.url_generator", "@Bigz_halapi.object_manager", "@request_stack"]
 
     Bigz_halapi.json_event_subscriber:
         class: Halapi\Subscriber\JsonEventSubscriber
