@@ -8,7 +8,7 @@ services:
 
     Bigz_halapi.links_relation:
         class: Halapi\Relation\LinksRelation
-        arguments: ["@annotation_reader", "&Bigz_halapi@url_generator", "@Bigz_halapi.object_manager"]
+        arguments: ["@annotation_reader", "@Bigz_halapi.url_generator", "@Bigz_halapi.object_manager"]
     Bigz_halapi.embedded_relation:
         class: Halapi\Relation\EmbeddedRelation
         arguments: ["@annotation_reader", "@request_stack"]
