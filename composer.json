@@ -13,7 +13,8 @@
   "require": {
     "php": ">5.5",
     "symfony/framework-bundle": "~2.7 || ~3.0",
-    "bigz/halapi": "dev-master"
+    "bigz/halapi": "dev-master",
+    "symfony/psr-http-message-bridge": "^1.0"
   },
   "require-dev": {
     "symfony/expression-language": "~2.4 || ~3.0",
