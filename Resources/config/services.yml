@@ -5,6 +5,9 @@ services:
     bigz_halapi.object_manager:
         class: Halapi\ObjectManager\DoctrineOrmObjectManager
         arguments: ["@doctrine.orm.entity_manager"]
+    bigz_halapi.pager:
+        class: Halapi\Pager\PagerFanta
+        arguments: ["DoctrineORM"]
     bigz_halapi.request_factory:
         class: Bigz\HalapiBundle\Factory\RequestFactory
     bigz_halapi.request:
@@ -24,7 +27,11 @@ services:
 
     bigz_halapi.pagination_factory:
         class: Halapi\Factory\PaginationFactory
-        arguments: ["@bigz_halapi.url_generator", "@bigz_halapi.object_manager", "@bigz_halapi.request"]
+        arguments:
+          - "@bigz_halapi.url_generator"
+          - "@bigz_halapi.object_manager"
+          - "@bigz_halapi.request"
+          - "@bigz_halapi.pager"
 
     bigz_halapi.json_event_subscriber:
         class: Halapi\Subscriber\JsonEventSubscriber
