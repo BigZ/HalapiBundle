@@ -11,6 +11,7 @@ services:
     bigz_halapi.request_factory:
         class: Bigz\HalapiBundle\Factory\RequestFactory
     bigz_halapi.request:
+        class: Psr\Http\Message\ServerRequestInterface
         factory: 'bigz_halapi.request_factory:getRequest'
         arguments: ['@request_stack']
 
