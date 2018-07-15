@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f53d12f9f62a8b0d9449d7bc4223d300",
+    "content-hash": "69c9a1c9ceaea649489b0965aa9bb91f",
     "packages": [
         {
             "name": "bigz/halapi",
-            "version": "0.2",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BigZ/Halapi.git",
-                "reference": "ef71be95a0372da89689b43c3e6ddb91a9ebffef"
+                "reference": "4910ab5175dd0a3010ee91bdb64eac0491ab474a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BigZ/Halapi/zipball/ef71be95a0372da89689b43c3e6ddb91a9ebffef",
-                "reference": "ef71be95a0372da89689b43c3e6ddb91a9ebffef",
+                "url": "https://api.github.com/repos/BigZ/Halapi/zipball/4910ab5175dd0a3010ee91bdb64eac0491ab474a",
+                "reference": "4910ab5175dd0a3010ee91bdb64eac0491ab474a",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 }
             ],
             "description": "A PHP library to support implementing representations for HAL, REST over JSON web services",
-            "time": "2018-07-15T16:57:07+00:00"
+            "time": "2018-07-15T20:05:03+00:00"
         },
         {
             "name": "doctrine/annotations",

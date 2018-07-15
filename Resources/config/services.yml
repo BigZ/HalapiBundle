@@ -36,6 +36,7 @@ services:
           - "@bigz_halapi.object_manager"
           - "@bigz_halapi.request"
           - "@bigz_halapi.pager"
+          - "@bigz_halapi.reader"
 
     bigz_halapi.json_event_subscriber:
         class: Halapi\Subscriber\JsonEventSubscriber
