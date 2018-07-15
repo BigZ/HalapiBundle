@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "bigz/halapi",
-            "version": "0.1",
+            "version": "0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BigZ/Halapi.git",
-                "reference": "989598f1d2303780134f84380050c1a777af77c3"
+                "reference": "ef71be95a0372da89689b43c3e6ddb91a9ebffef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BigZ/Halapi/zipball/989598f1d2303780134f84380050c1a777af77c3",
-                "reference": "989598f1d2303780134f84380050c1a777af77c3",
+                "url": "https://api.github.com/repos/BigZ/Halapi/zipball/ef71be95a0372da89689b43c3e6ddb91a9ebffef",
+                "reference": "ef71be95a0372da89689b43c3e6ddb91a9ebffef",
                 "shasum": ""
             },
             "require": {
@@ -31,9 +31,9 @@
             "require-dev": {
                 "codeclimate/php-test-reporter": "^0.3.2",
                 "doctrine/orm": "^2.5",
-                "escapestudios/symfony2-coding-standard": "~2.0",
+                "escapestudios/symfony2-coding-standard": "^3.4",
                 "phpunit/phpunit": "~5.6",
-                "squizlabs/php_codesniffer": "2.7"
+                "squizlabs/php_codesniffer": "^3.3"
             },
             "type": "library",
             "extra": {
@@ -57,7 +57,7 @@
                 }
             ],
             "description": "A PHP library to support implementing representations for HAL, REST over JSON web services",
-            "time": "2017-10-04T11:24:42+00:00"
+            "time": "2018-07-15T16:57:07+00:00"
         },
         {
             "name": "doctrine/annotations",

@@ -14,13 +14,16 @@ services:
         class: Psr\Http\Message\ServerRequestInterface
         factory: 'bigz_halapi.request_factory:getRequest'
         arguments: ['@request_stack']
+    bigz_halapi.reader:
+        class: Halapi\AnnotationReader\DoctrineAnnotationReader
+        arguments: ['@annotation_reader']
 
     bigz_halapi.links_relation:
         class: Halapi\Relation\LinksRelation
-        arguments: ["@annotation_reader", "@bigz_halapi.url_generator", "@bigz_halapi.object_manager"]
+        arguments: ["@bigz_halapi.reader", "@bigz_halapi.url_generator", "@bigz_halapi.object_manager"]
     bigz_halapi.embedded_relation:
         class: Halapi\Relation\EmbeddedRelation
-        arguments: ["@annotation_reader", "@bigz_halapi.request"]
+        arguments: ["@bigz_halapi.reader", "@bigz_halapi.request"]
 
     bigz_halapi.relation_factory:
         class: Halapi\Factory\RelationFactory

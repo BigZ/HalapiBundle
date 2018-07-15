@@ -13,7 +13,7 @@
   "require": {
     "php": ">5.5",
     "symfony/framework-bundle": "~2.7 || ~3.0",
-    "bigz/halapi": ">=0.1",
+    "bigz/halapi": "^0.2",
     "symfony/psr-http-message-bridge": "^1.0",
     "pagerfanta/pagerfanta": "^1.0",
     "zendframework/zend-diactoros": "^1.8"
