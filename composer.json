@@ -16,7 +16,8 @@
     "bigz/halapi": "^0.2",
     "symfony/psr-http-message-bridge": "^1.0",
     "pagerfanta/pagerfanta": "^1.0",
-    "zendframework/zend-diactoros": "^1.8"
+    "zendframework/zend-diactoros": "^1.8",
+    "league/fractal": "^0.17.0"
   },
   "require-dev": {
     "symfony/expression-language": "~2.4 || ~3.0",
