@@ -30,6 +30,7 @@ services:
         arguments: [["@bigz_halapi.embedded_relation", "@bigz_halapi.links_relation"]]
 
     bigz_halapi.pagination_factory:
+        public: true
         class: Halapi\Factory\PaginationFactory
         arguments:
           - "@bigz_halapi.url_generator"
