@@ -44,3 +44,8 @@ services:
         arguments: ["@bigz_halapi.relation_factory"]
         tags:
             - { name: jms_serializer.event_subscriber }
+
+    bigz_halapi.jsonapi_transformer:
+        class: Bigz\HalapiBundle\EventListener\ResponseListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.response }
