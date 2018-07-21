@@ -2,7 +2,7 @@
 
 namespace Bigz\HalapiBundle\EventListener;
 
-use Bigz\HalapiBundle\EntityTransformer;
+use Bigz\HalapiBundle\Transformer\EntityTransformer;
 use League\Fractal\Resource\Collection;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpFoundation\Request;
