@@ -79,6 +79,6 @@ class ResponseListener
 
         $enPosition = strpos($path,'/', 1);
 
-        return substr($path, 1, $enPosition ? $enPosition - 2 : strlen($path) - 2);
+        return substr($path, 1, $enPosition ? $enPosition - 1 : strlen($path) - 1);
     }
 }
