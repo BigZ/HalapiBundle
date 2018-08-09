@@ -44,7 +44,7 @@ class ResponseListener
         $resource = $this->getResource($content, $includes, $this->guessType($event->getRequest()));
         $data = $fractal->createData($resource)->toArray();
 
-        if ($resource instanceof Collection) {
+        if ($resource instanceof Collection && isset($content['_links'])) {
             $data['links'] = $content['_links'];
         }
 
@@ -63,7 +63,11 @@ class ResponseListener
             return new Item($content, new EntityTransformer($includes), $type);
         }
 
-        return new Collection($content['_embedded'], new EntityTransformer($includes), $type);
+        if (isset($content['_embedded'])) {
+            return new Collection($content['_embedded'], new EntityTransformer($includes), $type);
+        }
+
+        return new Collection($content, new EntityTransformer($includes), $type);
     }
 
     /**
